@@ -270,8 +270,8 @@ let days = [
   "Saturday",
   "Sunday",
 ];
-if (days.indexOf(a.dayOfWeek).toString().localeCompare(days.indexOf(b.dayOfWeek).toString()) !== 0) {
-  return days.indexOf(a.dayOfWeek).toString().localeCompare(days.indexOf(b.dayOfWeek).toString());
+if (days.indexOf(a.dayOfWeek).toString().localeCompare(days.indexOf(b.dayOfWeek).toString()) !== 0) {/*we can say days.indexOf(a.dayOfWeek)-(days.indexOf(b.dayOfWeek)) !== 0 */
+  return days.indexOf(a.dayOfWeek)-(days.indexOf(b.dayOfWeek)) !== 0;
  }  else if ( a.start.localeCompare(b.start) !== 0)  {
   return a.start - b.start;
  }
